@@ -1,0 +1,227 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+      Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      background-color: aliceblue;
+}   
+
+.socialspeak{
+    /* border: 2px solid red; */
+    padding: 5rem 0;
+}
+
+.section-title {
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 4rem;
+    font-weight: 700;
+    text-align: center;
+    font-size: 36px;
+    line-height: 1.5rem;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 0.7px;
+    word-spacing: 2px;
+}
+
+.youtube-btn{
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.youtube{
+    display: inline-block;
+    text-decoration: none;
+    transition: all 0.16s ease 0s;
+    border-style: solid;
+    cursor: pointer;
+    background-color: rgb(255, 0, 0);
+    color: rgb(247, 247, 247);
+    border-color: rgb(220, 220, 220);
+    border-width: 2px;
+    border-radius: 6px;
+    padding: 8px 17px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+}
+
+.youtube:hover {
+    background-color: rgb(247, 247, 247);
+    color: rgb(255, 0, 0);
+    /* font-size: 22px; */
+    font-weight: bold;
+}
+
+.youtube-videos {
+    display: grid;
+    grid-template-columns: 90vw;
+    row-gap: 1.5vw;
+    /* border: 2px solid red; */
+    width: 90vw;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+}
+
+
+
+.youtube-link {
+    width: 90vw;
+    /* border: 2px solid green; */
+    margin: 5px auto;
+    max-width: 480px;
+    transition: all 0.16s ease 0s;
+}
+
+.youtube-link:hover {
+    -webkit-transform : rotate(4deg) scale(1.1);
+    -ms-transform     : rotate(4deg) scale(1.1);
+    transform         : rotate(4deg) scale(1.1);
+}
+
+.imag-y {
+    
+    display: block;
+    width: 90vw;
+    height: 100%;
+    max-width: 480px;
+    object-fit: cover;
+    overflow: inherit;
+    border-radius: 4px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease-in-out all;
+}
+
+.imag-y:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+
+
+
+.linkdin-btn {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.linkdinA {
+    display: inline-block;
+    text-decoration: none;
+    transition: all 0.16s ease 0s;
+    border-style: solid;
+    cursor: pointer;
+    background-color: rgb(46, 60, 252);
+    color: rgb(247, 247, 247);
+    border-color: rgb(220, 220, 220);
+    border-width: 2px;
+    border-radius: 6px;
+    padding: 8px 17px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+}
+
+.linkdinA:hover {
+    background-color: rgb(247, 247, 247);
+    color: rgb(46, 60, 252);
+    font-weight: bold;
+}
+
+.linkdin-posts {
+    /* border: 2px solid green; */
+    display: grid;
+    row-gap: 1.5vw;
+    width: 95vw;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+}
+
+.linkdin-link {
+    width: 90vw;
+    margin: 5px auto;
+    max-width: 480px;
+    transition: all 0.16s ease 0s;
+}
+
+
+.linkdin-link:hover {
+    -webkit-transform : rotate(4deg) scale(1.1);
+    -ms-transform     : rotate(4deg) scale(1.1);
+    transform         : rotate(4deg) scale(1.1);
+}
+
+.imag-l {
+    width: 90vw;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    max-width: 480px;
+    /* margin: 5px auto; */
+    border-radius: 4px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease-in-out all;
+}
+
+.imag-l:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+@media only screen and (min-width: 750px) {
+	/*Small smartphones [325px -> 425px]*/
+
+    .youtube-videos {
+        grid-template-columns: auto auto auto;
+        column-gap: 1vw;
+        width: 95vw;
+        max-width: 1570px;
+    }
+    
+    .youtube-link {
+        width: 29vw;
+        /* border: 2px solid green; */
+        max-width: 480px;
+    
+    }
+    
+    .imag-y {
+        
+        width: 29vw;
+        max-width: 480px;
+    }
+
+    .linkdin-posts {
+        /* border: 2px solid green; */
+        grid-template-columns: auto auto;
+        column-gap: 1vw;
+        max-width: 1570px;
+        margin-bottom: 5rem;
+    }
+    
+    .linkdin-link {
+        width: 46vw;
+        margin: 5px auto;
+        max-width: 480px;
+    }
+    
+    .imag-l {
+        width: 46vw;
+        height: auto;
+        max-width: 480px;
+    }
+
+    /* to put last box in center */
+    .divl{
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    
+}
+
+
